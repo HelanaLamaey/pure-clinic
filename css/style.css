@@ -1,0 +1,877 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(22, 38, 223);
+    position: fixed;
+    z-index: 20;
+    opacity: 0.7;
+    padding: 10px 0;
+}
+
+.header-i1{
+    font-size: 30px;
+    color: white;
+    padding:0 30px;
+    float: left;
+}
+
+input {
+    width: 240px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    float: left;
+}
+
+.header-i2{
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    font-size: 20px;
+}
+
+.header-list{
+    float: right;
+    list-style: none;
+    margin:  0 50px;
+    position: relative;
+}
+
+.header-list li{
+    display: inline-block;
+    margin-left: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.header-list li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header-list li::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width:0;
+    height: 2px;
+    background-color: rgb(4, 4, 20);
+    visibility: hidden;
+}
+
+.header-list li:hover::after{
+    visibility: visible;
+    transition:0.5s;
+    width: 100%;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/nurse-listens-doctor-students-hospital-gowns-men-woman-standing-hospital-ward\ \(1\).jpg);
+    background-size: cover; 
+    position: relative;
+}
+
+.home-overlay{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home-content{
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+
+.home-title{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.home-p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.home-btn{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.home-btn-learn{
+    background-color: rgb(22, 38, 223);
+    color: white;
+    margin-left: 10px;
+}
+
+.home-btn:hover{
+    opacity: 0.6;
+}
+
+.container{
+  height: 100vh;
+  position: relative;
+}
+
+.content{
+    margin: auto;
+    overflow: auto;
+}
+
+.expertise-content{
+    width: 85%;
+    margin-top:90px;
+} 
+
+.container-title{
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0 10px 0;
+}
+
+.container-line{
+    width: 150px;
+    height: 4px;
+    margin: auto;
+    background-color: rgb(22, 38, 223);
+}
+
+.expertise-item{
+    float: left;
+    width: 28%;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(22, 38, 223);
+    position: relative;
+}
+
+.expertise-item-two{
+    margin:0 8%;
+}
+
+.expertise-item-i,.expertise-btn{
+    display: block;
+}
+.expertise-item-i,.expertise-item-title,.expertise-item-p,.expertise-btn{
+    padding-top: 20px ;
+    font-weight: bold;
+}
+
+.expertise-item-i{
+  font-size: 40px;
+  color:  rgb(22, 38, 223);
+ }
+
+ .expertise-item-title{
+    color: rgb(13, 13, 94);
+ }
+
+ .expertise-item-p{
+    color: grey;
+    font-size: 18px;
+ }
+ 
+.expertise-btn{
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: rgb(22, 38, 223);
+    font-size: 18px;
+}
+
+.expertise-item:hover .expertise-item-i,.expertise-item:hover .expertise-btn{
+    color: rgb(16, 10, 128);
+}
+
+.expertise-item:hover .expertise-item-title{
+    color: rgb(19, 23, 236);
+}
+
+.expertise-item:hover .expertise-item-p{
+    color: black;
+}
+
+.expertise-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    background-color:rgb(22, 38, 223);
+}
+
+.expertise-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    transition: 0.5s;
+  
+}
+
+.programs-container{
+    background-color: rgb(237, 242, 251);
+}
+
+.programs-content{
+    width: 70%;
+}
+
+.programs-item{
+    float: left;
+    width: 31%;
+    margin-top: 40px;
+
+}
+
+.programs-item-middle{
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+
+.programs-img{
+    width: 100%;
+    position: relative;
+}
+
+.programs-img img{
+    width: 100%;
+    height: 200px;
+}
+
+.programs-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    visibility: hidden;
+}
+
+.programs-overlay-title{
+   padding: 30px 0;
+   color: rgb(212, 209, 209);
+   font-size: 25px;
+   text-transform: uppercase;
+}
+.programs-overlay-p{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.programs-overlay-p span{
+    color: rgb(55, 132, 255);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.programs-overlay a{
+    display:inline-block;
+    color:rgb(75, 72, 255);
+    width: 40px;
+    height: 31px;
+    background-color:rgb(244, 239, 239);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px ;
+}
+
+.programs-overlay a i{
+    line-height: 31px; 
+}
+
+.programs-img:hover .programs-overlay{
+   visibility:visible;
+}
+
+.offer-content{
+    width: 80%;
+    margin-top: 50px;
+}
+
+.offer-item{
+    float: left;
+    width: 28%;
+    border-radius: 10px;
+    border: 1px solid rgb(22, 38, 223);
+    margin-bottom: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+.offer-item-middle{
+    margin:0 8%;
+}
+
+.offer-item-title{
+   font-size: 25px;
+   text-transform: uppercase;
+}
+.offer-item-title,.offer-item-p{
+    padding:5px 50px;
+}
+
+.offer-item-title{
+    padding-top: 30px;
+    color: rgb(19, 19, 97);
+}
+
+.offer-item-p{
+    padding-bottom: 30px;
+    color: gray;
+}
+
+.offer-item i{
+    position: absolute;
+    font-size: 30px;
+    top: 35px;
+    left: 10px;
+    color: rgb(22, 38, 223) ;
+}
+
+.offer-item:hover .offer-item-title{
+    color: rgb(19, 23, 236);
+}
+
+.offer-item:hover .offer-item-p{
+    color: black;
+}
+
+.offer-item:hover  i{
+    color: rgb(16, 10, 128);
+}
+
+.offer-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    background-color:rgb(22, 38, 223);
+}
+
+.offer-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.learn-content-img img{
+    height: 440px;
+    width: 350px;
+}
+
+.learn-content{
+    width:80%;
+    margin-top: 85px;
+}
+
+.learn-content-text{
+    float: left;
+    font-weight: bold;
+}
+
+.learn-content-img{
+    float: right;
+}
+
+.learn-title{
+    font-size:35px;
+    text-transform: capitalize;
+    padding-top:40px ;
+    color: rgb(7, 7, 68);
+}
+
+.learn-line{
+    width: 75px;
+    height: 4px;
+    background-color: rgb(22, 38, 223);
+    margin-top:8px;
+}
+
+.learn-p-main,.learn-p{
+   padding: 20px 0;
+}
+
+.learn-p-main{
+    color: rgb(92, 106, 191);
+    font-size: 18px;
+}
+.learn-p i{
+    color: rgb(22, 38, 223);
+}
+
+.learn-p span{
+    color: rgb(108, 109, 115)
+}
+
+.learn-list{
+    margin: 10px 0 0;
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.learn-list li{
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: rgb(133, 132, 132);
+  margin-left: 5px;
+}
+
+.learn-list .li-one{
+  background-color: rgb(22, 38, 223);
+}
+
+.learn-list li:hover{
+    background-color: rgb(22, 38, 223);
+}
+
+.container-bg{
+    background-image: url(../images/team-young-specialist-doctors-standing-corridor-hospital.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    height: 60vh;
+}
+
+.container-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.above-content{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.above-item{
+ float: left;
+ width: 20%;
+ margin-right:5%;
+ text-align: center;
+  
+}
+
+.above-item i{
+    color:rgb(116, 164, 255);
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.above-item i:hover{
+    color:rgb(22, 38, 223);
+}
+
+.above-item p{
+    padding-bottom: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.prices-content{
+    width: 70%;
+    margin-top: 50px;
+}
+
+.prices-item{
+    float: left;
+    width:30%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid rgb(22, 38, 223);
+    position: relative;
+}
+
+.prices-item-middle{
+    margin:0 5%;
+}
+
+.prices-item-title{
+    padding: 30px 0 10px ;
+    color: rgb(13, 13, 92);
+}
+
+.prices-item-p{
+    padding-bottom: 20px ;
+}
+
+.price-btn{
+    display: block;
+    width: 170px;
+    height: 30px;
+    color:white;
+    margin:0 auto 30px ;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    line-height:30px ;
+    background-color: rgb(22, 38, 223);
+}
+
+.show-price{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    margin:10px auto 20px;
+    border: 1px solid rgb(22, 38, 223);
+}
+
+.show-price-p1{
+    color: rgb(22, 38, 223);
+    font-size: 35px;
+    padding: 8px 0 3px ;
+}
+
+.show-price-p2{
+    color: rgb(110, 108, 108);
+    font-size: 18px;
+}
+
+.prices-item:hover .prices-item-title{
+    color:rgb(43, 23, 221);
+}
+.prices-item:hover .show-price {
+    border: 1px solid rgb(35, 49, 210);
+}
+
+.prices-item:hover .price-btn{
+    background-color: rgb(93, 105, 228);
+}
+
+.prices-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+    background-color:rgb(22, 38, 223);
+}
+
+.prices-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container-bg-two{
+    background-image: url(../images/female-surgeon-surgical-uniform.jpg);
+}
+
+.above-item-patient img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.above-item-patient{
+    float: left;
+    width: 40%;
+    margin-right:5%;
+}
+
+.item-patient-middle{
+    margin-left:5%;
+}
+
+.above-item-title{
+    float: left; 
+    padding: 10px 0 15px 15px ; 
+}
+
+.above-item-name{
+    padding-bottom: 5px;
+    color:white ;
+    font-size: 30px;
+}
+
+.above-item-patient{
+    color:rgb(116, 164, 255);
+}
+
+.above-item-p{
+    display: inline-block;
+    padding: 10px;
+    color: rgb(216, 215, 219);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.doctor-content{
+    width: 80%;
+    margin-top: 90px;
+}
+
+.doctor-item{
+    float: left;
+    width: 30%;
+    background-color: rgb(218, 230, 253);
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px 18px;
+    position: relative;
+}
+
+.doctor-item-middle{
+    margin: 0  5%;
+}
+
+.doctor-img{
+ width: 90%;
+ margin: auto;
+ font-weight: bold;
+ position: relative;
+
+}
+
+.doctor-img img{
+    width: 100%;
+    height: 220px;
+}
+
+.doctor-img-overlay{
+ position: absolute;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.5);
+ z-index: 1;
+ visibility: hidden;
+}
+
+.doctor-item:hover .doctor-img-overlay{
+    visibility: visible;
+}
+.doctor-img-overlay a{
+    display:block;
+    font-size: 20px;
+    color:white ;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(22, 38, 223);
+    margin-left: auto;
+}
+.doctor-img-overlay a i{
+    line-height: 40px;
+}
+
+.doctor-info-name{
+    padding:  12px 0;
+    text-transform:capitalize;
+    color: rgb(12, 12, 70);
+}
+
+.doctor-info-db{
+    text-transform:uppercase;
+    color: rgb(90, 85, 85);
+}
+
+.doctor-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color:rgb(22, 38, 223);
+}
+
+.doctor-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.blog-content{
+    width: 80%;
+    margin-top: 50px;
+}
+
+.blog-item{
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 20px 20px;
+    border: 1px solid rgb(22, 38, 223);
+    border-radius: 10px;
+    position: relative;
+}
+
+.blog-item-middle {
+    margin:0 5%;
+}
+
+.blog-img{
+    width: 90%;
+    margin: auto;
+}
+
+.blog-img img{
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.blog-info i{
+    color: rgb(22, 38, 223);
+} 
+
+.blog-info-icon{
+    padding: 15px 0;
+    font-size: 18px;
+} 
+
+.eye-icon{
+    padding-left:20px ;
+}
+
+.p-icon{
+    padding-right:20px;
+}
+
+.blog-info h2,.blog-info p{
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.blog-info h2{
+    color: rgb(12, 12, 57);
+}
+
+.blog-info p{
+    color: rgb(83, 81, 81);
+    font-size: 18px;
+}
+
+.blog-info .btn-blog{
+    display: block;
+    border: none;
+    background-color:rgb(22, 38, 223) ;
+    width: 150px;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    border-radius: 20px;
+    font-size: 18px;
+    padding-top: 4px;
+}
+
+.blog-item:hover .blog-info h2{
+    color: rgb(34, 27, 245);
+}
+
+.blog-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color:rgb(22, 38, 223);
+    z-index: -1;
+}
+
+.blog-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container-footer{
+    height: 60vh;
+    background-color: rgb(8, 27, 61);
+    margin-top:140px;
+    position: relative;
+}
+
+.footer-content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+
+.footer-content img{
+    width: 260px;
+    height: 190px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.footer-p{
+    color: white;
+    padding-top: 20px;
+}
+
+.footer-icon i{
+    display: inline-block;
+    font-size: 30px;
+    padding: 10px 9px;
+    margin-left: 7px ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(241, 241, 245);
+    color: rgb(30, 65, 208);
+}
+
+.footer-icon i:hover{
+    background-color: rgb(30, 65, 208) ;
+    color:rgb(241, 241, 245) ;
+}
+
+
+
+
+
+
+
+
